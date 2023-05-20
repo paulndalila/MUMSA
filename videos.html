@@ -69,6 +69,7 @@
                 // Create a text node with the 'X' symbol
                 const crossSymbol = document.createTextNode('X');
                 parentDiv.classList.add('exed');
+                
                 // Remove all existing child divs
                 while (parentDiv.firstChild) {
                 parentDiv.removeChild(parentDiv.firstChild);
@@ -77,6 +78,7 @@
                 // Add the 'X' symbol as the only child of the parent div
                 parentDiv.appendChild(crossSymbol);
                 parentDiv.style.background = 'red';
+                parentDiv.style.color = 'white';
             }
         }
    </script>
