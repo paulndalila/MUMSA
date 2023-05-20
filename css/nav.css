@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Times, serif;
+    color: rgb(42, 124, 110);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.header{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    height: fit-content;
+    margin: 0;
+}
+
+.header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    font-size: 14px;
+    z-index: 900;
+    margin-right: 10%;
+}
+
+li{
+    display: flex;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+li a{
+    letter-spacing: 1px;
+    display: flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.header div img{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    z-index: 999;
+    margin-left: 60px;
+}
+.dropdown{
+    position: relative;
+    display: inline;
+    transition: 1s;
+}
+
+.header ul .dropdown-list{
+    position: absolute;   
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid rgb(42, 124, 110);
+    border-top: none;
+    display: none;
+    z-index: 999;
+}
+
+.header ul .dropdown-list li{
+    color: black;
+    border-radius: 5px;
+}
+
+.header ul .dropdown-list li a{
+    color: black;
+    border-radius: 5px;
+    font-family: 'Poppins', serif;
+    text-decoration: none;
+    letter-spacing: normal;
+    text-transform: capitalize;
+}
+
+.header ul .dropdown-list li:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.header ul .dropdown-list li a:hover{
+    color: #fff;
+}
+
+#drop1:hover #dropdown-list1, #drop1:focus #dropdown-list1{
+    display: block;
+}
+
+#drop2:hover #dropdown-list2, #drop2:focus #dropdown-list2{
+    display: block;
+}
+
+#hamburger{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.685);
+    height: 30px;
+    width: 1.5cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+}
+
+#hamburger div{
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+}
+
+#drop3:hover #dropdown-list3, #drop3:focus #dropdown-list3{
+    display: block;
+}
+
+#drop4:hover #dropdown-list4, #drop4:focus #dropdown-list4{
+    display: block;
+}
+
+#announcelist{
+    position: relative;
+}
+
+.dropdown-info{
+    position: absolute;
+    display: flex;
+    height: fit-content;
+    top: 10px;
+    right: 100%;
+    padding: 10px;
+    background-color: #fff;
+    flex-direction: column;
+    border-radius: 10px 0 10px 10px;
+    border: 1px solid rgb(42, 124, 110);
+    display: none;
+}
+
+#announcelist:hover .dropdown-info{
+    display: flex;
+}
+
+.dropdown-info li a{
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(42, 165, 149, 0.808);
+    padding: 10px;
+}
+
+footer p{
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+}
+
+footer form h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+footer form p{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: 200;
+    font-family: 'Poppins', serif;
+}
+
+footer form input:first-child{
+    height: 1cm;
+    width: 250px;
+    outline: none;
+    padding: 0 10px;
+    border: none;
+}
+
+footer form input:last-child{
+    height: 1.08cm;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 20px;
+}
+
+footer form input:last-child:hover{
+    background-color: rgb(180, 177, 177);
+}
+
+footer form .note{
+    font-weight: 200;
+    font-family: 'Poppins', serif;
+    color: rgb(212, 211, 211);
+}
+
+footer p a{
+    font-size: 12px;
+    /* color: rgba(42, 124, 110); */
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p a img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+footer #reach-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 800px){
+    .header{
+        padding: 0 40px;
+        padding-bottom: 0;
+    }
+
+    .header div img{
+        height: 40px;
+        width: 45px;
+        margin-left: 20px;
+    }
+
+    #hamburger{
+        display: flex;
+        border: none;
+        top: 15px;
+    }
+    .header .nav{
+        position: fixed;
+        flex-direction: column;
+        background-color: #dee484;
+        height: 100vh;
+        width: 75vw;
+        top: -15px;
+        left: -100%;
+        padding: 0;
+        overflow: hidden;
+        animation: toggleHamburger;
+        animation-fill-mode: forwards;
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        border: 1px solid rgb(42, 124, 110);
+    }
+
+    .header .nav li a{
+        color: black;
+    }
+
+    @keyframes toggleHamburger {
+        0%{
+            left: -100%;
+        }
+
+        100%{
+            left: 0%;
+        }
+    }
+
+    li{
+        border-radius: 5px;
+    }
+
+    li:hover{
+        background-color: #fff;
+    }
+
+    li:hover a{
+        color: black;
+    }
+    
+    li a{
+        font-size: 14px;
+    }
+    .header .shrinked{
+        display: none;
+    }
+    .header .nav li .dropdown-list{
+        left: 5%;
+        top: 30px;
+        height: fit-content;
+        border: 1px solid rgb(42, 124, 110);
+        border-radius: 0;
+    }
+    .dropdown-info{
+        top: -280px;
+        right: 100%;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px 10px 0 10px;
+    }
+
+    footer form h3{
+        font-size: 18px;
+    }
+    
+    footer form p{
+        font-size: 12px;
+    }
+
+    footer form input:first-child{
+        height: .8cm;
+        width: 200px;
+    }
+    
+    footer form input:last-child{
+        height: .85cm;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .exed:first-child{
+        font-size: 20px;
+    }
+}

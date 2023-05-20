@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Moi University Muslim Student Association</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="images/logo.png" alt="mumsalogo">
+        </div>
+        <ul class="shrinked nav">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown" id="drop1"><a href="#">Resources</a>
+                <ul class="dropdown-list" id="dropdown-list1" >
+                    <li><a href="https://library.mu.ac.ke/">Library</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                </ul>
+            </li>
+            <li class="dropdown" id="drop2"> <a href="#">Activities</a>
+                <ul class="dropdown-list" id="dropdown-list2" >
+                    <li><a href="prayertm.html">Prayer Timetable</a></li>
+                </ul>
+            </li>
+            <li class="dropdown" id="drop3"><a href="#">Donate</a>
+                <ul class="dropdown-list" id="dropdown-list3" >
+                    <li><a href="donate.html">Make Donation</a></li>
+                    <li>Volunteer</li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li class="dropdown" id="drop4"><a href="#">Others</a>
+                <ul class="dropdown-list" id="dropdown-list4" >
+                    <li><a href="announce.html">Announcements</a></li>
+                    <li>Alumni section</li>
+                </ul>
+            </li>
+            
+        </ul>
+        <div id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+       </div>
+       <script>
+        document.getElementById("hamburger").onclick = () =>{
+          document.querySelector(".header ul").classList.toggle('shrinked');
+            const theNav = document.querySelector('.nav');
+            const parentDiv = document.querySelector('#hamburger');
+            // Toggle the hamburger icon
+            if (theNav.classList.contains('shrinked')) {
+
+                parentDiv.removeChild(parentDiv.firstChild)
+                parentDiv.classList.remove('exed');
+
+                for (let i = 1; i <= 3; i++) {
+                    const childDiv = document.createElement('div');
+                    childDiv.textContent = '    ';
+                    parentDiv.appendChild(childDiv);
+                }
+                parentDiv.style.background = 'transparent';
+
+            } else {
+                // Create a text node with the 'X' symbol
+                const crossSymbol = document.createTextNode('X');
+                parentDiv.classList.add('exed');
+                // Remove all existing child divs
+                while (parentDiv.firstChild) {
+                parentDiv.removeChild(parentDiv.firstChild);
+                }
+
+                // Add the 'X' symbol as the only child of the parent div
+                parentDiv.appendChild(crossSymbol);
+                parentDiv.style.background = 'red';
+            }
+        }
+   </script>
+   </div>
+
+   <div class="about-container">
+        <div class="about-nav">
+            <div class="about-img">
+                <img src="images/abt.png">
+                <h1>About Us</h1>
+            </div>
+            <ul>
+                <li><a href="#vs">Vision</a></li>
+                <li><a href="#ms">Mission</a></li>
+                <li><a href="#hs">History</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#map">Map location</a></li>
+            </ul>
+        </div>
+        
+        <div class="m-v-h">
+            <div class="mv">
+                <div id="vs" class="vision">
+                    <h2>Vision</h2>
+                    <hr>
+                    <p>At MUMSA, our vision is to foster a vibrant and inclusive community that embraces the values of Islam while promoting academic excellence, cultural diversity, and social responsibility. We aspire to be a beacon of knowledge and understanding, providing a safe and supportive space for Muslim students to thrive academically, spiritually, and socially. Our vision encompasses promoting interfaith dialogue, strengthening our ties with the broader university community, and actively contributing to the betterment of society through service and advocacy. By upholding the principles of compassion, integrity, and respect, we aim to inspire individuals to live their lives in accordance with Islamic teachings while positively impacting the world around them. Together, we envision a future where our MSA serves as a bridge of understanding, a catalyst for positive change, and a source of empowerment for all.</p>
+                </div>
+                <div id="ms" class="mission">
+                    <h2>Mission</h2>
+                    <hr>
+                    <P>The mission of MUMSA is to provide a nurturing and inclusive environment that supports the holistic development of Muslim students. Our mission encompasses four key pillars: faith, education, community, and service. Firstly, we strive to cultivate a strong foundation of faith by offering opportunities for spiritual growth, including regular prayer sessions, Quran study circles, and Islamic educational programs. Secondly, we are committed to promoting academic excellence through educational initiatives, workshops, and mentorship programs that empower students to excel in their studies. Thirdly, we foster a sense of community by organizing social events, cultural celebrations, and interfaith activities that encourage dialogue, understanding, and unity. Lastly, we emphasize the importance of service and giving back to society, actively engaging in community service projects, charity drives, and initiatives that address social issues. Through our mission, we aim to empower Muslim students to embrace their identity, excel academically, connect with their community, and contribute positively to society.</P>
+                </div>
+            </div>
+            
+            <div id="hs" class="history">
+                <h2>History</h2>
+                <hr>
+                <p>MUMSA has a rich and inspiring history that spans over 7 years. Established with the aim of providing a platform for Muslim students to connect, learn, and engage, our MSA has evolved into a vibrant community with a lasting impact. Throughout the years, we have organized numerous events, including lectures by renowned speakers, interfaith dialogues, charity drives, and cultural festivals that celebrate the diversity of our Muslim student body. Our MSA has been a catalyst for fostering a sense of belonging, promoting religious literacy, and creating a welcoming space for students of all backgrounds. We are proud of our history of unity, resilience, and impactful initiatives that have shaped the experiences of countless Muslim students at Moi University. As we reflect on our past achievements, we are excited about the future and remain committed to continuously serving and empowering the Muslim community on campus and beyond.</p>
+            </div>
+        </div>
+        <div id="team" class="our-team">
+            <div class="team">
+                <img src="images/mu5.png">
+                <h1>Our <br> Team</h1>
+            </div>
+            <p class="content" >We take great pleasure in presenting the dedicated individuals who work tirelessly to make our association a vibrant and inclusive community on campus. Together, we strive to foster unity, support, and opportunities for all Muslim students at our university.</p>
+            <div class="teams">
+                <div class="member">
+                    <img src="images/tm2.jpg">
+                    <div class="info">
+                        <p class="name">Kibwana Juma: </p>
+                        <p class="position">Chairperson</p>
+                    </div>
+                </div>
+    
+                <div class="member">
+                    <img src="images/tm3.jpg">
+                    <div class="info">
+                        <p class="name">Osman Bana: </p>
+                        <p class="position">Vice chairperson</p>
+                    </div>
+                </div>
+    
+                <div class="member">
+                    <img src="images/tm.jpg">
+                    <div class="info">
+                        <p class="name">Aisha Ali: </p>
+                        <p class="position">Chairlady</p>
+                    </div>
+                </div>
+    
+                <div class="member">
+                    <img src="images/vcchair.webp">
+                    <div class="info">
+                        <p class="name">Habiba Ibrahim: </p>
+                        <p class="position">Vice Chairlady</p>
+                    </div>
+                </div>
+    
+                <div class="member">
+                    <img src="images/tm6.webp">
+                    <div class="info">
+                        <p class="name">Hamisi Kenyatta: </p>
+                        <p class="position">Organizing Secretary</p>
+                    </div>
+                </div>
+    
+                <div class="member">
+                    <img src="images/tm5.jpg">
+                    <div class="info">
+                        <p class="name">Suleiman Randu: </p>
+                        <p class="position">Vice Organizing Secretary</p>
+                    </div>
+                </div>
+    
+                <div class="member">
+                    <img src="images/tm7.webp">
+                    <div class="info">
+                        <p class="name">Abdallah Katana: </p>
+                        <p class="position">Mosque Custodian</p>
+                    </div>
+                </div>
+    
+                <div class="member">
+                    <img src="images/tm4.jpg">
+                    <div class="info">
+                        <p class="name">Anis Abdurahman: </p>
+                        <p class="position">Pro</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="images/Elder.jpg">
+                    <div class="info">
+                        <p class="name">Abdalla Fadhili(Jeshi):  </p>
+                        <p class="position">Elder</p>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="images/formerchairperson.jpg">
+                    <div class="info">
+                        <p class="name">Ali Hamisi: </p>
+                        <p class="position">Former Chairperson</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="map" class="map">
+            <div class="md">
+                <img src="images/mu4.png" alt="">
+                <p>Moi University mosque directions</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.88369868269!2d35.292284473892714!3d0.27996786408264296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1780f468871e2bf3%3A0xc93d363aa3365341!2s77HV%2BXWQ%2C%20Changach!5e1!3m2!1sen!2ske!4v1684160381156!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+   </div>
+
+   <footer id="contacts">
+    <p>Follow us</p>
+    <form action="">
+        <h3>MUMSA Newsletter</h3>
+        <p>Sign up with your email address to receive news and updates.</p>
+        <div class="inputs">
+            <input type="email" placeholder="Email Address" required>
+            <input type="submit" value="SIGN UP">
+        </div>
+        <p class="note">We respect your privacy.</p>
+    </form>
+
+    <div id="reach-us">
+        <p><a href="https://www.facebook.com/Mumsa.Moi"><img src="images/facebook.png"></a></p>
+        <p><a href="twitter.com"><img src="images/twitter.png"></a></p>
+        <p><a href="https://youtube.com/@mumsamaincampus7241"><img src="images/youtube.png"></a></p>
+        <p><a href="mailto:mumsa.main@gmail.com"><img src="images/gmail.png"></a></p>
+    </div>
+    <p>Copywrite&copy;2023 Moi University Muslim Student Association.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,274 @@
+.header{
+    /* position: fixed; */
+    width: 100%;
+    background-color: #16a084f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 10px 0;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+li a{
+    color: #fff;
+}
+
+#hamburger div{
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.about-container{
+    background-color: #16a084f1;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.about-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 10px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    height: 2.5cm;
+}
+
+.about-nav .about-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-nav .about-img img{
+    height: 75px;
+}
+
+.about-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 100%;
+}
+
+.about-nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.about-nav ul li a{
+    color: black;
+}
+
+.m-v-h{
+    background-color: #fff;
+    margin: 0 10px;
+    padding: 20px 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.m-v-h hr{
+    width: 50%;
+    border: none;
+    height: 1px;
+    background-color: rgb(42, 124, 110);
+    outline: none;
+}
+
+.content{
+    padding: 0 60px;
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+}
+
+.our-team{
+    background-color: #16a084;
+    margin: 0 10px;
+    padding: 10px 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.team h1{
+    color: #fff;
+    /* color: brown; */
+    font-weight: 400;
+}
+
+.team img{
+    height: 100px;
+}
+
+.teams{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.teams .member{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.teams .member img{
+    height: 250px;
+    width: 250px;
+    border-radius: 4px;
+}
+
+.teams .member .info{
+    background-color: #fff;
+    position: absolute;
+    bottom: 10px;
+    width: 76.7%;
+    display: flex;
+    gap: 5px;
+    left: 25px;
+    height: fit-content;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.teams .member .info:hover{
+    transform: scale(1.05);
+}
+
+.teams .member .info p{
+    font-size: 11px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.map{
+    height: 510px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.md{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 60px;
+    gap: 5px;
+    padding-bottom: 3px;
+}
+
+.md img{
+    height: 100%;
+}
+
+.md p{
+    color: #fff;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 800px){
+    li a{
+        color: #fff;
+    }
+
+    
+    .content{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .about-container{
+        padding-top: 5px;
+    }
+
+    .about-nav{
+        margin: 0;
+        border-radius: 0;
+        height: 1cm;
+    }
+
+    .about-nav .about-img{
+        display: none;
+    }
+
+    .about-nav ul li a{
+        font-size: 12px;
+    }
+
+    .m-v-h{
+        padding: 10px 5px;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .m-v-h p{
+        font-size: 12px;
+    }
+
+    .m-v-h h2{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    
+    .our-team{
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .teams{
+        gap: 10px;
+        padding: 0 5px;
+    }
+    
+    .teams .member{
+        height: 300px;
+        width: 48%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .teams .member img{
+        height: 95%;
+        width: 95%;
+        border-radius: 4px;
+    }
+    
+    .teams .member .info{
+        background-color: #fff;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        padding: 0 10px;
+        border-radius: 0 10px 10px 10px;
+        cursor: pointer;
+        transition: .5s;
+    }
+}

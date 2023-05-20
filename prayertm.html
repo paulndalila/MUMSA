@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Timetable | Moi University Muslim Student Association</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/prayertm.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="images/logo.png" alt="mumsalogo">
+        </div>
+        <ul class="shrinked nav">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown" id="drop1"><a href="#">Resources</a>
+                <ul class="dropdown-list" id="dropdown-list1" >
+                    <li><a href="https://library.mu.ac.ke/">Library</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                </ul>
+            </li>
+            <li class="dropdown" id="drop2"> <a href="#">Activities</a>
+                <ul class="dropdown-list" id="dropdown-list2" >
+                    <li><a href="prayertm.html">Prayer Timetable</a></li>
+                </ul>
+            </li>
+            <li class="dropdown" id="drop3"><a href="#">Donate</a>
+                <ul class="dropdown-list" id="dropdown-list3" >
+                    <li><a href="donate.html">Make Donation</a></li>
+                    <li>Volunteer</li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li class="dropdown" id="drop4"><a href="#">Others</a>
+                <ul class="dropdown-list" id="dropdown-list4" >
+                    <li><a href="announce.html">Announcements</a></li>
+                    <li>Alumni section</li>
+                </ul>
+            </li>
+            
+        </ul>
+        <div id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+       </div>
+       <script>
+        document.getElementById("hamburger").onclick = () =>{
+          document.querySelector(".header ul").classList.toggle('shrinked');
+            const theNav = document.querySelector('.nav');
+            const parentDiv = document.querySelector('#hamburger');
+            // Toggle the hamburger icon
+            if (theNav.classList.contains('shrinked')) {
+
+                parentDiv.removeChild(parentDiv.firstChild)
+                parentDiv.classList.remove('exed');
+
+                for (let i = 1; i <= 3; i++) {
+                    const childDiv = document.createElement('div');
+                    childDiv.textContent = '    ';
+                    parentDiv.appendChild(childDiv);
+                }
+                parentDiv.style.background = 'transparent';
+
+            } else {
+                // Create a text node with the 'X' symbol
+                const crossSymbol = document.createTextNode('X');
+                parentDiv.classList.add('exed');
+                // Remove all existing child divs
+                while (parentDiv.firstChild) {
+                parentDiv.removeChild(parentDiv.firstChild);
+                }
+
+                // Add the 'X' symbol as the only child of the parent div
+                parentDiv.appendChild(crossSymbol);
+                parentDiv.style.background = 'red';
+            }
+        }
+   </script>
+   </div>
+
+   <div class="pt-body">
+        <div class="titles">
+            <h2>Prayer Timetable</h2>
+            <hr>
+            <p>This is our Prayer Timetable</p>
+        </div>
+   </div>
+
+   <div class="timetable">
+        <div class="time">
+            <img src="images/pt1.webp">
+            <p>Fajir</p>
+            <p>6:40 am</p>
+        </div>
+
+        <div class="time">
+            <img src="images/pt2.webp">
+            <p>Dhur</p>
+            <p>1:15 pm</p>
+        </div>
+
+        <div class="time">
+            <img src="images/pt3.webp">
+            <p>Asr</p>
+            <p>4:15 pm</p>
+        </div>
+
+        <div class="time">
+            <img src="images/pt4.webp">
+            <p>Maghrib</p>
+            <p>6:35 pm</p>
+        </div>
+
+        <div class="time">
+            <img src="images/pt5.webp">
+            <p>Ishar</p>
+            <p>8:15 pm</p>
+        </div>
+   </div>
+
+   <footer id="contacts">
+    <p>Follow us</p>
+    <form action="">
+        <h3>MUMSA Newsletter</h3>
+        <p>Sign up with your email address to receive news and updates.</p>
+        <div class="inputs">
+            <input type="email" placeholder="Email Address" required>
+            <input type="submit" value="SIGN UP">
+        </div>
+        <p class="note">We respect your privacy.</p>
+    </form>
+
+    <div id="reach-us">
+        <p><a href="https://www.facebook.com/Mumsa.Moi"><img src="images/facebook.png"></a></p>
+        <p><a href="twitter.com"><img src="images/twitter.png"></a></p>
+        <p><a href="https://youtube.com/@mumsamaincampus7241"><img src="images/youtube.png"></a></p>
+        <p><a href="mailto:mumsa.main@gmail.com"><img src="images/gmail.png"></a></p>
+    </div>
+    <p>Copywrite&copy;2023 Moi University Muslim Student Association.</p>
+</footer>
+</body>
+</html>

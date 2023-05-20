@@ -1,0 +1,159 @@
+.header{
+    width: 100%;
+    background-color: #16a084f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 20px 0 10px 0;
+    margin: 0;
+}
+
+li a{
+    color: #fff;
+}
+
+.form-container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #ebe9e9;
+}
+
+.form-container form{
+    width: 550px;
+    height: fit-content;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+.form-container form div .field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+
+.form-container form .field input{
+    padding: 5px 10px;
+    font-size: 14px;
+    height: fit-content;
+    border: none;
+    border: 1px solid rgb(148, 146, 146);
+    background-color: rgb(245, 243, 243);
+    outline: none;
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+.form-container form .inq{
+    width: 300px;
+}
+
+.form-container form .radio{
+    width: 20%;
+    display: flex;
+    gap: 5px;
+    padding-left: 20px;
+    color: black;
+}
+
+.form-container form .radio div{
+    margin-bottom: 10px;
+}
+
+.form-container form .message{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid rgb(148, 146, 146);
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+.form-container form #names{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+}
+
+.form-container form #names .name{
+    width: 48%;
+}
+
+.send{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.send input{
+    width: 120px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .5s;
+    background-color: rgb(12, 99, 230);
+}
+
+.send input:hover{
+    background-color: rgb(5, 84, 202);
+}
+
+.form-container form p{
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 800px){
+    .header{
+        height: 1cm;
+        padding: 10px 0;
+    }
+
+    .form-container{
+        padding: 20px 0;
+        background-color: #fff;
+    }
+
+    .form-container form{
+        width: 95%;
+        padding: 5px;
+        background-color: #fff;
+        border-radius: 0;
+        overflow: hidden;
+        box-shadow: none;
+    }
+    .form-container form .field input{
+        padding: 5px 10px;
+        font-size: 14px;
+        height: fit-content;
+        border: none;
+        border: 1px solid rgb(148, 146, 146);
+        background-color: #fff;
+        outline: none;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+}

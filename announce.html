@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements | Moi University Muslim Student Association</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/announce.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="images/logo.png" alt="mumsalogo">
+        </div>
+        <ul class="shrinked nav">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown" id="drop1"><a href="#">Resources</a>
+                <ul class="dropdown-list" id="dropdown-list1" >
+                    <li><a href="https://library.mu.ac.ke/">Library</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                </ul>
+            </li>
+            <li class="dropdown" id="drop2"> <a href="#">Activities</a>
+                <ul class="dropdown-list" id="dropdown-list2" >
+                    <li><a href="prayertm.html">Prayer Timetable</a></li>
+                </ul>
+            </li>
+            <li class="dropdown" id="drop3"><a href="#">Donate</a>
+                <ul class="dropdown-list" id="dropdown-list3" >
+                    <li><a href="donate.html">Make Donation</a></li>
+                    <li>Volunteer</li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li class="dropdown" id="drop4"><a href="#">Others</a>
+                <ul class="dropdown-list" id="dropdown-list4" >
+                    <li><a href="announce.html">Announcements</a></li>
+                    <li>Alumni section</li>
+                </ul>
+            </li>
+            
+        </ul>
+        <div id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+       </div>
+       <script>
+        document.getElementById("hamburger").onclick = () =>{
+          document.querySelector(".header ul").classList.toggle('shrinked');
+            const theNav = document.querySelector('.nav');
+            const parentDiv = document.querySelector('#hamburger');
+            // Toggle the hamburger icon
+            if (theNav.classList.contains('shrinked')) {
+
+                parentDiv.removeChild(parentDiv.firstChild)
+                parentDiv.classList.remove('exed');
+
+                for (let i = 1; i <= 3; i++) {
+                    const childDiv = document.createElement('div');
+                    childDiv.textContent = '    ';
+                    parentDiv.appendChild(childDiv);
+                }
+                parentDiv.style.background = 'transparent';
+
+            } else {
+                // Create a text node with the 'X' symbol
+                const crossSymbol = document.createTextNode('X');
+                parentDiv.classList.add('exed');
+                // Remove all existing child divs
+                while (parentDiv.firstChild) {
+                parentDiv.removeChild(parentDiv.firstChild);
+                }
+
+                // Add the 'X' symbol as the only child of the parent div
+                parentDiv.appendChild(crossSymbol);
+                parentDiv.style.background = 'red';
+            }
+        }
+   </script>
+   </div>
+
+   <div class="announce-container">
+        <div class="announce-body">
+            <div class="logo2">
+                <img src="images/mu6.png">
+                <h1>MUMSA</h1>
+            </div>
+            <ul class="ann-nav">
+                <li><a href="#fo">Fresher orientation</a></li>
+                <li><a href="#fp">Fresher picnic</a></li>
+                <li><a href="#ir">Internal Rally</a></li>
+                <li><a href="#sd">Sports day</a></li>
+                <li><a href="#am">AGM meeting</a></li>
+            </ul>
+        </div>
+
+        <div class="blog">
+            <div class="News">
+                <h2>Latest News |</h2>
+                <div class="blocks">
+                    <div class="news">
+                        <div class="img"><img src="images/islamicLead.jpg"></div>
+                        <h4>MUMSA Hosts Successful Interfaith Dialogue Event</h4>
+                        <p>Recently organized a thought-provoking interfaith dialogue event, fostering meaningful discussions and promoting religious harmony on campus. Students from diverse backgrounds engaged in open conversations, deepening mutual understanding and respect.</p>
+                    </div>
+                    <div class="news">
+                        <div class="img"><img src="images/islamicL.jpg"></div>
+                        <h4>Annual Ramadan Iftar Dinner Celebrated with Great Enthusiasm</h4>
+                        <p>Celebrated the holy month of Ramadan with a joyous Iftar dinner, bringing together students, faculty, and staff from all walks of life. The event showcased the spirit of unity, fostering a sense of community and providing an opportunity to learn more about the Islamic faith and its traditions.</p>
+                    </div>
+                    <div class="news">
+                        <div class="img"><img src="images/islamicLeader.jpg"></div>
+                        <h4>MUMSA Volunteers Make a Positive Impact in Local Community</h4>
+                        <p>Members of the Muslim Student Association dedicated their time and efforts to a community service initiative, organizing a food drive for those in need. With generous contributions from students and faculty, the MSA was able to donate a substantial amount of food to local shelters, making a tangible difference in the lives of individuals facing food insecurity</p>
+                    </div>
+                    <div class="news">
+                        <div class="img"><img src="images/islamicLe.jpg"></div>
+                        <h4>MUMSA Organizes Educational Seminar on Islam</h4>
+                        <p>Held an informative seminar on Islam, providing an opportunity for students and staff to learn about the basic principles and practices of the religion. With expert speakers and engaging discussions, attendees gained a better understanding of Islam's teachings, dispelling misconceptions and fostering a sense of religious literacy.</p>
+                    </div>
+                    <div class="news">
+                        <div class="img"><img src="images/islamicLl.jpg"></div>
+                        <h4>MUMSA Supports Mental Health Awareness with Mindfulness Workshop</h4>
+                        <p>Recognizing the importance of mental health, the Muslim Student Association organized a mindfulness workshop, offering students practical techniques to manage stress and promote overall well-being. The workshop emphasized the integration of Islamic teachings with mindfulness practices, providing students with tools to enhance their emotional resilience and spiritual growth.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="events">
+                <h2>Events</h2>
+                <div class="event">
+                    <h2 id="fo">Fresher Orientation</h2>
+                    <hr>
+                    <p>Attention all incoming Muslim students! Get ready for an informative and engaging experience at the Fresher Orientation organized by the Muslim Student Association at Moi University. This orientation session is designed to familiarize you with the university's resources, support systems, and the vibrant Muslim community on campus. Our dedicated team of student leaders will provide essential information about prayer facilities, halal dining options, and various student organizations available to you. You'll also have the opportunity to connect with current students and ask any questions you may have about university life. Join us for a warm welcome and a chance to embark on your university journey with confidence and a strong support network. Don't miss the Fresher Orientation—it's the perfect way to start your academic year!</p>
+                </div>
+
+                <div class="event">
+                    <h2 id="fp" >Fresher Picnic</h2>
+                    <hr>
+                    <p>Join us for an exciting day of fun and camaraderie at the upcoming Fresher Picnic hosted by the Muslim Student Association at Moi University. This much-anticipated event is specifically designed for our newly enrolled students, providing an opportunity to connect with fellow peers and build lasting friendships within the Muslim community. From thrilling outdoor games to delicious food and engaging activities, the Fresher Picnic promises a memorable experience for everyone. Whether you're a freshman or a senior, come and enjoy a day filled with laughter, entertainment, and the chance to create unforgettable memories. Mark your calendars and be ready to kick-start your university journey with us at the Fresher Picnic!</p>
+                </div>
+
+                <div class="event">
+                    <h2 id="ir">Internal Rally</h2>
+                    <hr>
+                    <p>Get ready to unite and amplify your voices at our upcoming Internal Rally. This event aims to bring together MSA members from all backgrounds and academic disciplines for a powerful display of solidarity and support. With inspiring speeches, thought-provoking discussions, and engaging activities, the Internal Rally will empower you to make a meaningful impact on campus and beyond. Join us as we celebrate our diversity, reaffirm our shared values, and collectively work towards promoting understanding, inclusivity, and social justice. Don't miss this opportunity to connect with like-minded individuals and be part of a positive change. Mark your calendars and be prepared to rally together for a brighter future. Together, we can make a difference!</p>
+                </div>
+                <div class="event">
+                    <h2 id="sd">Sports Day</h2>
+                    <hr>
+                    <p>Get ready to unleash your competitive spirit and showcase your athletic skills at the highly anticipated Sports Day organized by MUMSA. Join us for a day filled with exciting sports tournaments, friendly matches, and thrilling challenges. Whether you're a seasoned athlete or just looking to have some fun, there will be activities for everyone, including soccer, basketball, relay races, and much more. Sports Day is not only about the thrill of competition but also about fostering teamwork, building friendships, and promoting a healthy lifestyle. So, gather your friends, put on your sports gear, and get ready for an action-packed day of adrenaline-fueled fun. Don't miss out on this incredible opportunity to bond with fellow students, embrace the spirit of sportsmanship, and create unforgettable memories. See you on the field!</p>
+                </div>
+                <div class="event">
+                    <h2 id="am">AGM Meeting</h2>
+                    <hr>
+                    <p>It's time for our Annual General Meeting (AGM), and we invite you to join us for a crucial gathering of our vibrant community. The AGM is an opportunity for you to voice your opinions, contribute ideas, and actively participate in shaping the future of our association. We will discuss important matters such as upcoming events, leadership roles, and initiatives for the academic year. Your presence and input are invaluable in guiding our decisions and ensuring that our association remains dynamic and inclusive. So, mark your calendars, come prepared with your suggestions, and let your voice be heard at the AGM. Together, we will continue to create a welcoming and empowering environment for all Muslim students on campus. See you at the AGM!</p>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <footer id="contacts">
+    <p>Follow us</p>
+    <form action="">
+        <h3>MUMSA Newsletter</h3>
+        <p>Sign up with your email address to receive news and updates.</p>
+        <div class="inputs">
+            <input type="email" placeholder="Email Address" required>
+            <input type="submit" value="SIGN UP">
+        </div>
+        <p class="note">We respect your privacy.</p>
+    </form>
+
+    <div id="reach-us">
+        <p><a href="https://www.facebook.com/Mumsa.Moi"><img src="images/facebook.png"></a></p>
+        <p><a href="twitter.com"><img src="images/twitter.png"></a></p>
+        <p><a href="https://youtube.com/@mumsamaincampus7241"><img src="images/youtube.png"></a></p>
+        <p><a href="mailto:mumsa.main@gmail.com"><img src="images/gmail.png"></a></p>
+    </div>
+    <p>Copywrite&copy;2023 Moi University Muslim Student Association.</p>
+</footer>
+</body>
+</html>
