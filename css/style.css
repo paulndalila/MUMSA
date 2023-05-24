@@ -74,35 +74,13 @@ section{
     transform: scale(1.3);
 }
 
-.float{
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    background-color: rgba(42, 124, 110);
-    height: 45px;
-    width: 150px;
-    overflow: hidden;
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    cursor: pointer;
+.box{
+    opacity: 0.5;
+    transition: opacity .5s ease-in;
 }
 
-.float img{
-    height: 30px;
-    width: 30px;
-    border-radius: 50% 50% 50% 0;
-    background-color: #fff;
-}
-
-.float button{
-    border: none;
-    outline: none;
-    background: transparent;
-    color: #fff;
-    cursor: pointer;
+.active{
+    opacity: 1;
 }
 
 @media only screen and (max-width: 800px){
