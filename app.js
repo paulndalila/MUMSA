@@ -32,36 +32,5 @@ document.getElementById("hamburger").onclick = () =>{
     }
 }
 
-//for the homepage
-// Get all the target elements with class "box"
-// const targetElements = document.querySelectorAll('.box');
-
-// // Function to check if an element is in the viewport
-// function isElementInViewport(element) {
-//   const rect = element.getBoundingClientRect();
-//   return (
-//     rect.top >= 0 &&
-//     rect.left >= 0 &&
-//     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//   );
-// }
-
-// // Function to toggle the 'active' class for the elements in the viewport
-// function toggleActiveClass() {
-//   targetElements.forEach(element => {
-//     if (isElementInViewport(element)) {
-//       element.classList.add('active');
-//     } else {
-//       element.classList.remove('active');
-//     }
-//   });
-// }
-
-// // Event listener for scroll events
-// window.addEventListener('scroll', toggleActiveClass);
-
-// Initial check for elements in the viewport
-//toggleActiveClass();
 
 
