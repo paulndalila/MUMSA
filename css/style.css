@@ -38,7 +38,7 @@ section{
     width: 32%;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    height: 350px;
     position: relative;
     overflow: hidden;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Moi University Muslim Student Association</title>
     <link rel="icon" type="image/png" href="images/1.png" sizes="32x32">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -59,42 +60,46 @@
    
 
    <div class="mid">
-        <div class="box"><a href="about.html">
+        <div class="box" data-aos="fade-up"><a href="about.html">
             <img src="images/abAB.jpg">
             <h1>ABOUT</h1>
         </a>
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="1500">
             <a href="videos.html">
                 <img src="images/abRE.jpg">
             <h1>RESOURCES</h1>
             </a>
         </div>
-        <div class="box">
+        <div class="box" data-aos="flip-left" data-aos-duration="1500">
             <a href="prayertm.html">
                 <img src="images/abACT.jpg">
                 <h1>ACTIVITIES</h1>
             </a>
         </div>
-        <div class="box">
+        <div class="box" data-aos="zoom-in" data-aos-duration="1500">
             <a href="donate.html">
                 <img src="images/abDON.jpg">
                 <h1>DONATE</h1>
             </a>
         </div>
-        <div class="box">
+        <div class="box" data-aos="zoom-in" data-aos-duration="1500">
             <a href="contact.html">
                 <img src="images/abCO.jpg">
                 <h1>CONTACTS</h1>
             </a>
         </div>
-        <div class="box">
+        <div class="box" data-aos="zoom-in" data-aos-duration="1500">
             <a href="announce.html">
                 <img src="images/abANNOU.jpg">
                 <h1>ANNOUNCEMENTS</h1>
             </a>
         </div>
    </div>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+       AOS.init();
+   </script>
 
    <footer id="contacts">
         <p>Follow us</p>
