@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Moi University Muslim Student Association</title>
+    <link rel="icon" type="image/png" href="images/1.png" sizes="32x32">
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://kit.fontawesome.com/179a6fd48d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="title">
+                <i class="fa-solid fa-toolbox" id="logo"></i>
+                <h2>MUMSA</h2>
+            </div>
+            
+            <div class="items">
+                <ul>
+                    <li class="active"><i class="fa-sharp fa-solid fa-gauge"></i>Dashboard</li>
+                    <li><i class="fa-solid fa-file-invoice"></i>Subscribers</li>
+                    <li><i class="fa-solid fa-store"></i>Social media</li>
+                    <li><i class="fa-brands fa-wpforms"></i>Contact forms</li>
+                    <li><i class="fa-solid fa-database"></i>Resources</li>
+                    <li><i class="fa-solid fa-money-bill-trend-up"></i>News & Events</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="sub-container">
+            <div class="dashboard">
+                <div class="top-bar">
+                    <div class="toggler">
+                        <i class="fa-solid fa-bars" id="hamburger"></i>
+                        <h3>Dashboard</h3>
+                    </div>
+                    
+                    <div class="search">
+                        <input type="text" name="search" placeholder="Search inventory">
+                        <button type="submit" name="search" id="sbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="user">
+                        <img src="../images/profile.avif">
+                        <div class="details">
+                            <h4>Paul Ndalila</h4>
+                            <p>Admin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="boxes">
+                        <div class="box">
+                            <div class="tt">
+                                <h1>14</h1>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                            </div>
+                            <p>Email Newsletter Subscriptions</p>
+                        </div>
+
+                        <div class="box">
+                            <div class="tt">
+                                <h1>4</h1>
+                                <i class="fa-solid fa-comment"></i>
+                            </div>
+                            <p>MUMSA Social Media sites</p>
+                        </div>
+
+                        <div class="box">
+                            <div class="tt">
+                                <h1>33</h1>
+                                <i class="fa-solid fa-list"></i>
+                            </div>
+                            <p>Filled Contact forms</p>
+                        </div>
+
+                        <div class="box">
+                            <div class="tt">
+                                <h1>8</h1>
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                            <p>Announcements: <br> Latest News</p>
+                        </div>
+
+                        <div class="box">
+                            <div class="tt">
+                                <h1>5</h1>
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            <p>Announcements: <br> Events</p>
+                        </div>
+
+                        <div class="box">
+                            <div class="tt">
+                                <h1>5</h1>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                            <p>Youtube Video Resources</p>
+                        </div>
+                    </div>
+
+                    <div class="chart">
+                        <div>
+                            <canvas id="myChart"></canvas>
+                        </div>
+                          
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                          
+                        <script>
+                            const ctx = document.getElementById('myChart');
+                          
+                            new Chart(ctx, {
+                              type: 'bar',
+                              data: {
+                                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June'],
+                                datasets: [{
+                                  label: 'MUMSA total visits',
+                                  data: [55, 60, 100, 15, 80, 115],
+                                  backgroundColor: 'rgba(255, 99, 132)',
+                                //   borderColor: 'rgb(255, 99, 132)',
+                                  borderWidth: 1
+                                }]
+                              },
+                              options: {
+                                scales: {
+                                  y: {
+                                    beginAtZero: true
+                                  }
+                                }
+                              }
+                            });
+                        </script>
+                    </div>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
