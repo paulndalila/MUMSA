@@ -9,7 +9,9 @@ section{
     top: 0;
     left: 0;
     filter: brightness(50%);
+    object-fit: cover;
     width: 100%;
+    height: 100vh;
     z-index: -1;
 }
 
@@ -85,6 +87,16 @@ section{
         height: 300px;
         font-family: 'Oswald', sans-serif;
         text-align: center;
+        animation: moveWelcome 1s forwards;
+    }
+
+    @keyframes moveWelcome {
+        0%{
+
+        }
+        100%{
+            height: 100%;
+        }
     }
 
     .welcome h1{
@@ -94,10 +106,10 @@ section{
     }
 
     section{
-        height: 88vh;
+        height: 80vh;
     }
     #BACKGROUND{
-        height: 88vh;
+        height: 80vh;
         background-position: center;
         object-fit: cover;
     }    
