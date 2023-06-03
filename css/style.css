@@ -106,10 +106,10 @@ section{
     }
 
     section{
-        height: 80vh;
+        height: 100vh;
     }
     #BACKGROUND{
-        height: 80vh;
+        height: 100vh;
         background-position: center;
         object-fit: cover;
     }    
