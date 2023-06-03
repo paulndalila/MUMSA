@@ -94,12 +94,12 @@ section{
     }
 
     section{
-        height: fit-content;
+        height: 88vh;
     }
     #BACKGROUND{
-        height: 400px;
+        height: 88vh;
         background-position: center;
-        background-size: cover;
+        object-fit: cover;
     }    
 
     .mid{
