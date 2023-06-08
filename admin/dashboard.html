@@ -14,7 +14,7 @@
         <div class="sidebar">
             <div class="title">
                 <i class="fa-solid fa-toolbox" id="logo"></i>
-                <h2>MUMSA</h2>
+                <a href="../index.html"><h2 style="color: black;">MUMSA</h2></a>
             </div>
             
             <div class="items">
@@ -56,7 +56,7 @@
                         <div class="box">
                             <div class="tt">
                                 <h1>14</h1>
-                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <i class="fa-sharp fa-solid fa-envelope" style="color: orange;"></i>
                             </div>
                             <p>Email Newsletter Subscriptions</p>
                         </div>
@@ -64,7 +64,7 @@
                         <div class="box">
                             <div class="tt">
                                 <h1>4</h1>
-                                <i class="fa-solid fa-comment"></i>
+                                <i class="fa-solid fa-comment" style="color: rgb(31, 32, 32);"></i>
                             </div>
                             <p>MUMSA Social Media sites</p>
                         </div>
@@ -72,7 +72,7 @@
                         <div class="box">
                             <div class="tt">
                                 <h1>33</h1>
-                                <i class="fa-solid fa-list"></i>
+                                <i class="fa-solid fa-list" style="color: brown;"></i>
                             </div>
                             <p>Filled Contact forms</p>
                         </div>
@@ -80,7 +80,7 @@
                         <div class="box">
                             <div class="tt">
                                 <h1>8</h1>
-                                <i class="fa-solid fa-newspaper"></i>
+                                <i class="fa-solid fa-newspaper" style="color: black;"></i>
                             </div>
                             <p>Announcements: <br> Latest News</p>
                         </div>
@@ -96,7 +96,7 @@
                         <div class="box">
                             <div class="tt">
                                 <h1>5</h1>
-                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-youtube" style="color: rgb(247, 51, 37);"></i>
                             </div>
                             <p>Youtube Video Resources</p>
                         </div>
@@ -176,8 +176,8 @@
 
                         <tr class="subscriber">
                             <td>2</td>
-                            <td>Faith Chepkoech</td>
-                            <td>faithchepkoech058@gmail.com</td>
+                            <td>Emmah Mwangi</td>
+                            <td>Emmahmwangi@gmail.com</td>
                         </tr>
                     </table>           
                 </div>
@@ -248,57 +248,32 @@
                             </div>
                         </div>
                     </div>
+                    <input type="Submit" id="save-links" value="Save changes">
                 </div>
             </div>
 
-            <script>
-                // Get references to the div elements
-                var divs = document.querySelectorAll('.item');
-                var containers = document.querySelectorAll('.mains');
+            <!-- contact tab -->
+            <div id="item4-active" class="tab mains contacts">
+                <div class="top-bar">
+                    <div class="toggler">
+                        <i class="fa-solid fa-bars" id="hamburger"></i>
+                        <h3>MUMSA CONTACT FORMS</h3>
+                    </div>
 
-                // Attach click event listeners to the div elements
-                for (var i = 0; i < 6; i++) {
+                    <div class="user">
+                        <img src="../images/profile.avif">
+                        <div class="details">
+                            <h4>Paul Ndalila</h4>
+                            <p>Admin</p>
+                        </div>
+                    </div>
+                </div>
 
-                    divs[i].addEventListener('click', function () {
-
-                        //removing existing selection
-                        for (var j = 0; j < 6; j++) {
-                            divs[j].classList.remove('active');
-                        }
-
-                        for (var m = 0; m < 3; m++) {
-                            containers[m].classList.add('tab');
-                        }
-
-                        //var clickedDivIndex = parseInt(this.);
-                        
-                        this.classList.add('active');
-
-                        var number = parseInt((this.id).match(/\d+/)[0]);
-
-                        console.log(number);
-
-                        // Checking the clicked item and activating appropriate field
-                        if (number == 1){
-                            var activateDashboard = document.getElementById('item1-active');
-                            activateDashboard.classList.remove('tab');
-                            console.log(activateDashboard);
-
-                        }else if(number == 2){
-                            var activateDashboard = document.getElementById('item2-active');
-                            activateDashboard.classList.remove('tab');
-
-                        }else if(number == 3){
-                            var activateDashboard = document.getElementById('item3-active');
-                            activateDashboard.classList.remove('tab');
-                        }
-                        
-                    });
-                }
+                <div class="Contact-contentpane">
                     
-
-                
-            </script>
+                </div>
+            </div>
+            <script src="admin.js"></script>
         </div>
     </div>
 </body>

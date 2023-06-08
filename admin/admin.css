@@ -117,6 +117,10 @@ ul{
     padding: 10px;
     margin-bottom: 20px;
     cursor: pointer;
+    -webkit-user-select: none; /* Safari/Chrome */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
     border-radius: 30px 0 0 30px;
 }
 
@@ -144,6 +148,10 @@ ul{
     background-color: #fff;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.top-bar h3{
+    text-transform: uppercase;
 }
 
 .toggler{
@@ -239,7 +247,9 @@ ul{
     height: 50%;
     padding-top: 20PX;
 }
-
+.box .tt h1{
+    color: rgb(5, 126, 248);
+}
 .box .tt h1, .tt i{
     padding: 0;
     font-size: 50px;
@@ -357,6 +367,27 @@ ul{
 .link-field input:focus{
     border: none;
     border-bottom: 1px solid rgb(42, 124, 110);
+}
+
+#save-links{
+    width: fit-content;
+    background-color: rgb(5, 130, 255);
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-family: 'Poppins', serif;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px 30px;
+    margin: 0 auto;
+    transition: .5s;
+    /* box-shadow: 0 0 5px dodgerblue; */
+}
+
+#save-links:hover{
+    background-color: rgb(7, 120, 233);
+    box-shadow: 0 0 10px rgb(7, 120, 233);
 }
 
 .sites-contentpane, .subscriber-contentpane, .content{
