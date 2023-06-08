@@ -18,19 +18,20 @@
             </div>
             
             <div class="items">
-                <ul>
-                    <li class="active"><i class="fa-sharp fa-solid fa-gauge"></i>Dashboard</li>
-                    <li><i class="fa-solid fa-file-invoice"></i>Subscribers</li>
-                    <li><i class="fa-solid fa-store"></i>Social media</li>
-                    <li><i class="fa-brands fa-wpforms"></i>Contact forms</li>
-                    <li><i class="fa-solid fa-database"></i>Resources</li>
-                    <li><i class="fa-solid fa-money-bill-trend-up"></i>News & Events</li>
+                <ul id="items">
+                    <li class="item active" id="item1"><i class="fa-sharp fa-solid fa-gauge"></i>Dashboard</li>
+                    <li class="item" id="item2"><i class="fa-solid fa-file-invoice"></i>Subscribers</li>
+                    <li class="item" id="item3"><i class="fa-solid fa-store"></i>Social media</li>
+                    <li class="item" id="item4"><i class="fa-brands fa-wpforms"></i>Contact forms</li>
+                    <li class="item" id="item5"><i class="fa-solid fa-database"></i>Resources</li>
+                    <li class="item" id="item6"><i class="fa-solid fa-money-bill-trend-up"></i>News & Events</li>
                 </ul>
             </div>
         </div>
         
         <div class="sub-container">
-            <div class="dashboard">
+            <!-- Dashboard tab -->
+            <div id="item1-active" class="mains dashboard">
                 <div class="top-bar">
                     <div class="toggler">
                         <i class="fa-solid fa-bars" id="hamburger"></i>
@@ -136,6 +137,168 @@
                       
                 </div>
             </div>
+
+            <!-- email subscribers tab -->
+            <div id="item2-active" class="tab mains Subscribers">
+                <div class="top-bar">
+                    <div class="toggler">
+                        <i class="fa-solid fa-bars" id="hamburger"></i>
+                        <h3>Email Newsletter Subscribers</h3>
+                    </div>
+                    
+                    <div class="search">
+                        <input type="text" name="search" placeholder="Search subscriber">
+                        <button type="submit" name="search" id="sbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                    <div class="user">
+                        <img src="../images/profile.avif">
+                        <div class="details">
+                            <h4>Paul Ndalila</h4>
+                            <p>Admin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subscriber-contentpane">
+                    <table>
+                        <tr>
+                            <th>Subscriber ID</th>
+                            <th>Name</th>
+                            <th>Email Address</th>
+                        </tr>
+
+                        <tr class="subscriber">
+                            <td>1</td>
+                            <td>Paul Ndalila</td>
+                            <td>paulndalila001@gmail.com</td>
+                        </tr>
+
+                        <tr class="subscriber">
+                            <td>2</td>
+                            <td>Faith Chepkoech</td>
+                            <td>faithchepkoech058@gmail.com</td>
+                        </tr>
+                    </table>           
+                </div>
+            </div>
+
+            <!-- social media tab -->
+            <div id="item3-active" class="tab mains social-media">
+                <div class="top-bar">
+                    <div class="toggler">
+                        <i class="fa-solid fa-bars" id="hamburger"></i>
+                        <h3>MUMSA Social Media sites</h3>
+                    </div>
+
+                    <div class="user">
+                        <img src="../images/profile.avif">
+                        <div class="details">
+                            <h4>Paul Ndalila</h4>
+                            <p>Admin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sites-contentpane">
+                    <h4>" Click The Link To Update it "</h4>
+                    <div class="smboxes">
+                        <div class="email smbox">
+                            <div class="box-logo">
+                                <i class="fa-solid fa-envelope"></i>
+                                <h3>Email Address</h3>
+                            </div>
+                            <div class="link-field">
+                                <p>Link: </p>
+                                <input type="email" placeholder="Email Address" value="mumsa.main@gmail.com">
+                            </div>
+                        </div>       
+                        
+                        <div class="facebook smbox">
+                            <div class="box-logo">
+                                <i class="fa-brands fa-square-facebook" style="color: rgba(11, 91, 211, 0.815);"></i>
+                                <h3>Facebook Link</h3>
+                            </div>
+                            <div class="link-field">
+                                <p>Link: </p>
+                                <input type="url" placeholder="Facebook url" value="https://www.facebook.com/Mumsa.Moi">
+                            </div>
+                        </div>
+    
+                        <div class="twitter smbox">
+                            <div class="box-logo">
+                                <i class="fa-brands fa-twitter" style="color: dodgerblue;"></i>
+                                <h3>Twitter Link</h3>
+                            </div>
+                            <div class="link-field">
+                                <p>Link: </p>
+                                <input type="url" placeholder="Twitter url" value="https://twitter.com/mumsa_main">
+                            </div>
+                        </div>
+    
+                        <div class="youtube smbox">
+                            <div class="box-logo">
+                                <i class="fa-brands fa-youtube" style="color: rgb(247, 51, 37);"></i>
+                                <h3>Youtube Link</h3>
+                            </div>
+    
+                            <div class="link-field">
+                                <p>Link: </p>
+                                <input type="url" placeholder="Youtube url" value="https://youtube.com/@mumsamaincampus7241">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                // Get references to the div elements
+                var divs = document.querySelectorAll('.item');
+                var containers = document.querySelectorAll('.mains');
+
+                // Attach click event listeners to the div elements
+                for (var i = 0; i < 6; i++) {
+
+                    divs[i].addEventListener('click', function () {
+
+                        //removing existing selection
+                        for (var j = 0; j < 6; j++) {
+                            divs[j].classList.remove('active');
+                        }
+
+                        for (var m = 0; m < 3; m++) {
+                            containers[m].classList.add('tab');
+                        }
+
+                        //var clickedDivIndex = parseInt(this.);
+                        
+                        this.classList.add('active');
+
+                        var number = parseInt((this.id).match(/\d+/)[0]);
+
+                        console.log(number);
+
+                        // Checking the clicked item and activating appropriate field
+                        if (number == 1){
+                            var activateDashboard = document.getElementById('item1-active');
+                            activateDashboard.classList.remove('tab');
+                            console.log(activateDashboard);
+
+                        }else if(number == 2){
+                            var activateDashboard = document.getElementById('item2-active');
+                            activateDashboard.classList.remove('tab');
+
+                        }else if(number == 3){
+                            var activateDashboard = document.getElementById('item3-active');
+                            activateDashboard.classList.remove('tab');
+                        }
+                        
+                    });
+                }
+                    
+
+                
+            </script>
         </div>
     </div>
 </body>

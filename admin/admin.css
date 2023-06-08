@@ -4,7 +4,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', serif;
-    background-color: rgb(42, 124, 110);
+    background-color: rgb(42, 124, 110,0.8);
     color: #fff;
     overflow: hidden;
 }
@@ -59,10 +59,10 @@ body{
     font-family: 'Poppins', serif;
     border: none;
     outline: none;
-    border-radius: 4px;
-    padding: 5px 15px;
-    margin-left: 70%;
+    border-radius: 30px;
+    padding: 10px 15px;
     color: #fff;
+    width: 319px;
     font-weight: 500;
     cursor: pointer;
     transition: .5s ease-in;
@@ -121,17 +121,18 @@ ul{
 }
 
 .sidebar li:hover, .sidebar li.active{
-    background-color: #e6e5e5;
+    background-color: #F4F4F4;
     color: rgb(42, 124, 110);
 }
 
 .sub-container{
     position: fixed;
     margin-left: 230px;
-    background-color: #e6e5e5;
+    background-color: #F4F4F4;
     height: 100vh;
     width: calc(100% - 230px);
 }
+
 
 .top-bar{
     height: 60px;
@@ -142,7 +143,7 @@ ul{
     padding: 5px 20px;
     background-color: #fff;
     overflow: hidden;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .toggler{
@@ -227,7 +228,7 @@ ul{
     border-radius: 8px;
     cursor: pointer;
     color: rgb(42, 124, 110);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .tt{
@@ -251,3 +252,135 @@ ul{
 .chart{
     padding: 20px 0;
 }
+
+
+/* Subscribers tab */
+.subscriber-contentpane{
+    max-height: calc(100vh - 72px);
+    overflow: auto;
+}
+.subscriber-contentpane table{
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+}
+
+.subscriber-contentpane table tr th{
+    color: rgba(34, 34, 34);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.subscriber-contentpane table td{
+    padding: 5px 10px;
+}
+
+.subscriber-contentpane table tr:first-child{
+    text-align: left;
+}
+
+/* social-media section */
+.sites-contentpane{
+    display: flex;
+    flex-direction: column;
+}
+
+.sites-contentpane h4{
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    color: rgb(42, 124, 110);
+}
+
+.smboxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 40px;
+}
+
+.smbox{
+    width: 400px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+.box-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-logo i{
+    font-size: 40px;
+}
+
+.link-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 50px;
+    margin-left: 5%;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 0 20px;
+}
+
+.link-field p{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.link-field input{
+    width: 90%;
+    font-family: 'Poppins', serif;
+    outline: none;
+    height: 30px;
+    color: rgb(8, 89, 238);
+    transition: 1s;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    padding-right: 10px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+.link-field input:focus{
+    border: none;
+    border-bottom: 1px solid rgb(42, 124, 110);
+}
+
+.sites-contentpane, .subscriber-contentpane, .content{
+    animation: bringPanel 1s forwards;
+}
+
+@keyframes bringPanel {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.tab{
+    display: none;
+}
+
+/* common colors
+rgb 250, 250, 250
+red rgb 255, 96, 86
+yellow rgb 255, 189, 45
+green rgb 89, 201, 64
+blackish-perfect rgb 34, 34, 34
+white 255, 255,255 */
