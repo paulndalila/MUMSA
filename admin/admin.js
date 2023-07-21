@@ -13,7 +13,7 @@ for (var i = 0; i < 6; i++) {
             divs[j].classList.remove('active');
         }
 
-        for (var m = 0; m < 4; m++) {
+        for (var m = 0; m < 6; m++) {
             containers[m].classList.add('tab');
         }
 
@@ -40,6 +40,12 @@ for (var i = 0; i < 6; i++) {
             activateDashboard.classList.remove('tab');
         }else if(number == 4){
             var activateDashboard = document.getElementById('item4-active');
+            activateDashboard.classList.remove('tab');
+        }else if(number == 5){
+            var activateDashboard = document.getElementById('item5-active');
+            activateDashboard.classList.remove('tab');
+        }else if(number == 6){
+            var activateDashboard = document.getElementById('item6-active');
             activateDashboard.classList.remove('tab');
         }
         
