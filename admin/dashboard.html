@@ -42,7 +42,7 @@
                         <input type="text" name="search" placeholder="Search inventory">
                         <button type="submit" name="search" id="sbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
-                    <div class="user">
+                    <div class="user" onclick="openWindow()">
                         <img src="../images/profile.avif">
                         <div class="details">
                             <h4>Paul Ndalila</h4>
@@ -151,7 +151,7 @@
                         <button type="submit" name="search" id="sbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
 
-                    <div class="user">
+                    <div class="user" onclick="openWindow()">
                         <img src="../images/profile.avif">
                         <div class="details">
                             <h4>Paul Ndalila</h4>
@@ -191,7 +191,7 @@
                         <h3>MUMSA Social Media sites</h3>
                     </div>
 
-                    <div class="user">
+                    <div class="user" onclick="openWindow()">
                         <img src="../images/profile.avif">
                         <div class="details">
                             <h4>Paul Ndalila</h4>
@@ -260,7 +260,7 @@
                         <h3>MUMSA CONTACT FORMS</h3>
                     </div>
 
-                    <div class="user">
+                    <div class="user" onclick="openWindow()">
                         <img src="../images/profile.avif">
                         <div class="details">
                             <h4>Paul Ndalila</h4>
@@ -312,7 +312,7 @@
                         <h3>MUMSA RESOURCES</h3>
                     </div>
 
-                    <div class="user">
+                    <div class="user" onclick="openWindow()">
                         <img src="../images/profile.avif">
                         <div class="details">
                             <h4>Paul Ndalila</h4>
@@ -379,7 +379,7 @@
                         <h3>MUMSA NEWS & EVENTS</h3>
                     </div>
 
-                    <div class="user">
+                    <div class="user" onclick="openWindow()">
                         <img src="../images/profile.avif">
                         <div class="details">
                             <h4>Paul Ndalila</h4>
@@ -490,6 +490,44 @@
 
             <script src="admin.js"></script>
         </div>
+
+        <div class="user-profile" id="user-profile">
+            <div class="profile">
+                <h1>Administrator profile</h1>
+                <label for="username">Username:</label>
+                <input type="text" name="username" placeholder="Username">
+
+                <div class="name">
+                    <label for="name">Full Name:</label>
+                    <input type="text" name="name" placeholder="Full Name">
+                </div>
+
+                <br>
+
+                <h2>Change Password</h2>
+                <div class="pass-field">
+                    <label for="current-password">Current Password:</label>
+                    <input type="password" name="current-password" placeholder="Current password">
+                </div>
+                
+                <div class="pass-field">
+                    <label for="new-password">New Password:</label>
+                    <input type="password" name="new-password" placeholder="New password">
+                </div>
+
+                <div class="pass-field">
+                    <label for="retype-password">Re-type Password:</label>
+                    <input type="password" name="retype-password" placeholder="Re-type password">
+                </div>
+
+                <div class="savebtn">
+                    <input type="submit" id="save-btn" value="Save changes">
+                </div>
+
+                <h1 id="user-profile-exit" onclick="closeWindow()">&times;</h1>
+            </div>
+        </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
