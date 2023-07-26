@@ -21,25 +21,61 @@ body{
 .form-container .img-background{
     width: 50%;
     height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container .img-background img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.form-container .img-background h1{
+    position: absolute;
+    color: #fff;
+    bottom: 40%;
+    font-family: 'Poppins', serif;
+}
+
+.form-part{
+    gap: 10px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form-container form{
-    padding: 20px 30px;
-    width: 350px;
+    padding: 5px 30px 20px 30px;
+    width: 380px;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .form-container form h3{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
 }
 
+.form-container form h3 img{
+    height: 40px;
+}
 
 .fields div{
     background-color: #fff;
