@@ -320,6 +320,7 @@ ul{
     cursor: pointer;
     border: 1px solid #ccc;
     color: rgb(42, 124, 110);
+    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
