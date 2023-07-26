@@ -33,7 +33,7 @@ body{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    filter: brightness(70%);
+    filter: brightness(90%);
 }
 
 .form-container .img-background h1{
