@@ -18,6 +18,11 @@ body{
     justify-content: center;
 }
 
+.form-container .img-background{
+    width: 50%;
+    height: 100%;
+}
+
 .form-container form{
     padding: 20px 30px;
     width: 350px;
