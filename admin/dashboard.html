@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard | Moi University Muslim Student Association</title>
-    <link rel="icon" type="image/png" href="images/1.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../images/1.png" sizes="32x32">
     <link rel="stylesheet" href="admin.css">
     <script src="https://kit.fontawesome.com/179a6fd48d.js" crossorigin="anonymous"></script>
 </head>
@@ -271,35 +271,41 @@
 
                 <div class="Contact-contentpane">
                     <table>
-                        <tr>
-                            <th>No.</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Type</th>
-                            <th>City</th>
-                            <th>Subject</th>
-                            <th>Comments</th>
-                        </tr>
 
-                        <tr class="user-message">
-                            <td>1</td>
-                            <td>David Abdi</td>
-                            <td>abdi2001@gmail.com</td>
-                            <td>General</td>
-                            <td>Uasin Gishu</td>
-                            <td>INQUIRY</td>
-                            <td>When is the next mmusa event?</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Type</th>
+                                <th>City</th>
+                                <th>Subject</th>
+                                <th>Comments</th>
+                            </tr>
+                        </thead>
 
-                        <tr class="user-message">
-                            <td>2</td>
-                            <td>Amina Yacho</td>
-                            <td>aminayacho@gmail.com</td>
-                            <td>General</td>
-                            <td>Nairobi</td>
-                            <td>APPRECIATION</td>
-                            <td>What a great platform to present Muslim views to the youths.</td>
-                        </tr>
+                        <tbody>
+                            <tr class="user-message">
+                                <td>1</td>
+                                <td>David Abdi</td>
+                                <td>abdi2001@gmail.com</td>
+                                <td>General</td>
+                                <td>Uasin Gishu</td>
+                                <td>INQUIRY</td>
+                                <td>When is the next mmusa event?</td>
+                            </tr>
+    
+                            <tr class="user-message">
+                                <td>2</td>
+                                <td>Amina Yacho</td>
+                                <td>aminayacho@gmail.com</td>
+                                <td>General</td>
+                                <td>Nairobi</td>
+                                <td>APPRECIATION</td>
+                                <td>What a great platform to present Muslim views to the youths.</td>
+                            </tr>
+                        </tbody>
+
                     </table>                    
                 </div>
             </div>
@@ -325,8 +331,10 @@
 
                     <div class="library-link">
                         <h3>MU Library-link:</h3>
-                        <input type="url" placeholder="library link" value="https://library.mu.ac.ke/" />                        
-                        <input type="submit" class="update-library-link" value="Update">
+                        <div class="change-link">
+                            <input type="url" placeholder="library link" value="https://library.mu.ac.ke/" />                        
+                            <input type="submit" class="update-library-link" value="Update">
+                        </div>
                     </div>
 
                     <div class="iframe-section">
@@ -334,32 +342,27 @@
                         <div class="iframe-links">
                             <div class="iframe-link">
                                 <input type="url" placeholder="iframe link" value="">
-                                <input type="submit" class="update-video" value="update">
-                                <input type="submit" class="remove-video" value="remove">
+                                <input type="submit" class="remove-video" value="Remove">
                             </div>
 
                             <div class="iframe-link">
                                 <input type="url" placeholder="iframe link" value="">
-                                <input type="submit" class="update-video" value="update">
-                                <input type="submit" class="remove-video" value="remove">
+                                <input type="submit" class="remove-video" value="Remove">
                             </div>
 
                             <div class="iframe-link">
                                 <input type="url" placeholder="iframe link" value="">
-                                <input type="submit" class="update-video" value="update">
-                                <input type="submit" class="remove-video" value="remove">
+                                <input type="submit" class="remove-video" value="Remove">
                             </div>
                             
                             <div class="iframe-link">
                                 <input type="url" placeholder="iframe link" value="">
-                                <input type="submit" class="update-video" value="update">
-                                <input type="submit" class="remove-video" value="remove">
+                                <input type="submit" class="remove-video" value="Remove">
                             </div>
                             
                             <div class="iframe-link">
                                 <input type="url" placeholder="iframe link" value="">
-                                <input type="submit" class="update-video" value="update">
-                                <input type="submit" class="remove-video" value="remove">
+                                <input type="submit" class="remove-video" value="Remove">
                             </div>
                         </div>
 
@@ -395,49 +398,43 @@
                         <div class="News">
                             <div class="news">
                                 <input type="text" placeholder="News title">
-                                <input type="text" placeholder="News paragraph">
-                                <input type="file">
-                                <input type="submit" class="update-news" value="update">
-                                <input type="submit" class="remove-news" value="remove">
+                                <input type="text" class="paragraph" placeholder="News paragraph">
+                                <input type="file" accept="image/*" >
+                                <input type="submit" class="remove-news" value="remove news">
                             </div>
 
                             <div class="news">
                                 <input type="text" placeholder="News title">
-                                <input type="text" placeholder="News paragraph">
-                                <input type="file">
-                                <input type="submit" class="update-news" value="update">
-                                <input type="submit" class="remove-news" value="remove">
-                            </div>
-
-                            
+                                <input type="text" class="paragraph" placeholder="News paragraph">
+                                <input type="file" accept="image/*">
+                                <input type="submit" class="remove-news" value="remove news">
+                            </div>                            
 
                             <div class="news">
                                 <input type="text" placeholder="News title">
-                                <input type="text" placeholder="News paragraph">
-                                <input type="file">
-                                <input type="submit" class="update-news" value="update">
-                                <input type="submit" class="remove-news" value="remove">
+                                <input type="text" class="paragraph" placeholder="News paragraph">
+                                <input type="file" accept="image/*">
+                                <input type="submit" class="remove-news" value="remove news">
                             </div>
 
                             <div class="news">
                                 <input type="text" placeholder="News title">
-                                <input type="text" placeholder="News paragraph">
-                                <input type="file">
-                                <input type="submit" class="update-news" value="update">
-                                <input type="submit" class="remove-news" value="remove">
+                                <input type="text" class="paragraph" placeholder="News paragraph">
+                                <input type="file" accept="image/*">
+                                <input type="submit" class="remove-news" value="remove news">
                             </div>
 
                             <div class="news">
                                 <input type="text" placeholder="News title">
-                                <input type="text" placeholder="News paragraph">
-                                <input type="file">
-                                <input type="submit" class="update-news" value="update">
-                                <input type="submit" class="remove-news" value="remove">
+                                <input type="text" class="paragraph" placeholder="News paragraph">
+                                <input type="file" accept="image/*">
+                                <input type="submit" class="remove-news" value="remove news">
                             </div>
                         </div>
 
                         <div class="add-news">
-                            <input type="submit" id="add-news" value="Add News">
+                            <input type="submit" id="save-news" value="Save changes">
+                            <input type="submit" id="add-news" value="Add news">
                         </div>
                     </div>
 
@@ -447,41 +444,37 @@
                             <div class="event">
                                 <input type="text" placeholder="Event title">
                                 <input type="text" placeholder="Event paragraph">
-                                <input type="submit" class="update-event" value="update">
                                 <input type="submit" class="remove-event" value="remove">
                             </div>
 
                             <div class="event">
                                 <input type="text" placeholder="Event title">
                                 <input type="text" placeholder="Event paragraph">
-                                <input type="submit" class="update-event" value="update">
                                 <input type="submit" class="remove-event" value="remove">
                             </div>
 
                             <div class="event">
                                 <input type="text" placeholder="Event title">
                                 <input type="text" placeholder="Event paragraph">
-                                <input type="submit" class="update-event" value="update">
                                 <input type="submit" class="remove-event" value="remove">
                             </div>
 
                             <div class="event">
                                 <input type="text" placeholder="Event title">
                                 <input type="text" placeholder="Event paragraph">
-                                <input type="submit" class="update-event" value="update">
                                 <input type="submit" class="remove-event" value="remove">
                             </div>
 
                             <div class="event">
                                 <input type="text" placeholder="Event title">
                                 <input type="text" placeholder="Event paragraph">
-                                <input type="submit" class="update-event" value="update">
                                 <input type="submit" class="remove-event" value="remove">
                             </div>
                         </div>
 
-                        <div class="add-event">
-                            <input type="submit" id="add-event" value="Add Event">
+                        <div class="add-events">
+                            <input type="submit" id="save-events" value="save changes">
+                            <input type="submit" id="add-event" value="add event">
                         </div>
                     </div> 
 
@@ -492,10 +485,10 @@
         </div>
 
         <div class="user-profile" id="user-profile">
-            <div class="profile">
+            <form class="profile">
                 <h1>Administrator profile</h1>
                 <label for="username">Username:</label>
-                <input type="text" name="username" placeholder="Username">
+                <input type="text" name="username" value="paul_ndalila" placeholder="Username" readonly>
 
                 <div class="name">
                     <label for="name">Full Name:</label>
@@ -525,7 +518,7 @@
                 </div>
 
                 <h1 id="user-profile-exit" onclick="closeWindow()">&times;</h1>
-            </div>
+            </form>
         </div>
     </div>
     <script src="app.js"></script>

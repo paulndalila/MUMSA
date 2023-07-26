@@ -319,7 +319,7 @@ ul{
     border-radius: 8px;
     cursor: pointer;
     color: rgb(42, 124, 110);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .tt{
@@ -351,14 +351,16 @@ ul{
 .subscriber-contentpane{
     max-height: calc(100vh - 72px);
     overflow: auto;
+    width: 100%;
 }
 .subscriber-contentpane table{
-    width: 80%;
+    width: calc(95% - 20px);
     height: 100%;
     margin: 20px auto;
     padding: 10px;
+    background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.3);
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
 }
 
 .subscriber-contentpane table tr th{
@@ -491,10 +493,172 @@ ul{
     display: none;
 }
 
-/* common colors
-rgb 250, 250, 250
-red rgb 255, 96, 86
-yellow rgb 255, 189, 45
-green rgb 89, 201, 64
-blackish-perfect rgb 34, 34, 34
-white 255, 255,255 */
+/* contact forms */
+.Contact-contentpane{
+    width: calc(100% - 40px);
+    margin: 5px;
+    padding: 5px 10px 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+.Contact-contentpane table{
+    width: 100%;
+    margin: 5px auto;
+    border-top: 1px solid gray;
+}
+
+.Contact-contentpane table th{
+    text-align: left;
+}
+
+/* resources tab */
+.resource-contentpane{
+    margin: 5px;
+    padding: 20px;
+    height: calc(100vh - 120px);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+.library-link{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.change-link{
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+
+.change-link input{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.change-link .update-library-link{
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid gray;
+    transition: .5s ease-in-out;
+    background-color: rgba(42, 124, 110, 0.644);
+}
+
+.change-link .update-library-link:hover{
+    background-color: rgb(226, 93, 166);
+}
+
+.iframe-section h3{
+    text-align: center;
+}
+
+.iframe-links{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.iframe-link{
+    width: 40%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+}
+
+.iframe-link input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+.iframe-link input:first-child{
+    flex-grow: 1;
+}
+
+.iframe-link .remove-video{
+    width: 20%;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(42, 124, 110, 0.8);
+}
+
+.add-iframe{
+    /* width: 80%; */
+    margin: 20px 0;
+}
+
+.add-iframe input{
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 20px;
+    transition: .5s ease-in-out;
+    background-color: rgb(22, 94, 167);
+}
+
+.add-iframe input:hover{
+    box-shadow: 0 0 10px rgb(22, 94, 167);
+}
+
+/* news and events */
+.news-events-contentpane{
+    margin: 5px;
+    padding: 5px 10px;
+    width: calc(100% - 20px);
+    height: calc(100vh - 100px);
+    background-color: #fff;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+.News{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.news{
+    width: 30%;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+.news input{
+    width: calc(100% - 10px);
+    height: 10%;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+}
+
+.news .paragraph{
+    height: 65%;
+} 
+
+.add-news{
+    padding: 10px 0;
+}
+
+.add-news input{
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 20px;
+    cursor: pointer;
+    background-color: rgb(23, 111, 199);
+}

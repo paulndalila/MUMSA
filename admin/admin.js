@@ -29,8 +29,6 @@ for (var i = 0; i < 6; i++) {
         if (number == 1){
             var activateDashboard = document.getElementById('item1-active');
             activateDashboard.classList.remove('tab');
-            console.log(activateDashboard);
-
         }else if(number == 2){
             var activateDashboard = document.getElementById('item2-active');
             activateDashboard.classList.remove('tab');
