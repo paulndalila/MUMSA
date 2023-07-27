@@ -669,12 +669,14 @@ ul{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
 .news{
     width: 30%;
     height: 200px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     border: 1px solid #ccc;
     padding: 5px;
@@ -682,7 +684,7 @@ ul{
 }
 
 .news input{
-    width: calc(100% - 10px);
+    width: calc(100% - 5px);
     height: 10%;
     border: none;
     outline: none;
@@ -690,7 +692,10 @@ ul{
 }
 
 .news .paragraph{
-    height: 65%;
+    flex-grow: 1;
+    outline: none;
+    border: 1px solid #ccc;
+    width: calc(100% - 5px);
 } 
 
 .add-news{
@@ -705,4 +710,44 @@ ul{
     padding: 8px 20px;
     cursor: pointer;
     background-color: rgb(23, 111, 199);
+}
+
+.Events{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.event{
+    width: 30%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.event .paragraph{
+    flex-grow: 1;
+}
+
+.add-events{
+    padding: 10px 0;
+}
+
+.add-events input{
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 20px;
+    cursor: pointer;
+    background-color: rgb(23, 111, 199);
+}
+
+.remove-news{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 2px auto;
+    background-color: rgb(42, 124, 110, 0.8);
 }
