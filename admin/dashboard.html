@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard | Moi University Muslim Student Association</title>
     <link rel="icon" type="image/png" href="../images/1.png" sizes="32x32">
-    <link rel="stylesheet" href="admin.css">
     <script src="https://kit.fontawesome.com/179a6fd48d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="admin.css">
 </head>
 <body>
     <div class="container">
@@ -161,25 +161,38 @@
                 </div>
 
                 <div class="subscriber-contentpane">
-                    <table>
-                        <tr>
-                            <th>Subscriber ID</th>
-                            <th>Name</th>
-                            <th>Email Address</th>
-                        </tr>
+                    
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
 
-                        <tr class="subscriber">
-                            <td>1</td>
-                            <td>Paul Ndalila</td>
-                            <td>paulndalila001@gmail.com</td>
-                        </tr>
+                    <table id="sub-table" class="table table-striped" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Subscriber ID</th>
+                                <th>Name</th>
+                                <th>Email Address</th>
+                            </tr>
+                        </thead>
 
-                        <tr class="subscriber">
-                            <td>2</td>
-                            <td>Emmah Mwangi</td>
-                            <td>Emmahmwangi@gmail.com</td>
-                        </tr>
-                    </table>           
+                        <tbody>
+                            <tr class="subscriber">
+                                <td>1</td>
+                                <td>Paul Ndalila</td>
+                                <td>paulndalila001@gmail.com</td>
+                            </tr>
+    
+                            <tr class="subscriber">
+                                <td>2</td>
+                                <td>Emmah Mwangi</td>
+                                <td>Emmahmwangi@gmail.com</td>
+                            </tr>
+                        </tbody>
+
+                    </table> 
+                    
+                    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+                    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+                    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>          
                 </div>
             </div>
 
@@ -482,8 +495,8 @@
 
                 </div>
             </div>
-
-            <script src="admin.js"></script>
+            
+            <script defer src="admin.js"></script>
         </div>
 
         <div class="user-profile" id="user-profile">

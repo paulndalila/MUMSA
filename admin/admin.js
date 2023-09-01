@@ -1,4 +1,5 @@
 
+
 // Get references to the div elements
 var divs = document.querySelectorAll('.item');
 var containers = document.querySelectorAll('.mains');
@@ -49,4 +50,3 @@ for (var i = 0; i < 6; i++) {
         
     });
 }
-                    
