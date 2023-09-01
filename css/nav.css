@@ -35,6 +35,10 @@ body{
     margin-right: 10%;
 }
 
+#nav-title{
+    display: none;
+}
+
 li{
     display: flex;
     padding: 5px 10px;
@@ -267,6 +271,17 @@ footer #reach-us{
         border: none;
         top: 15px;
     }
+
+    #nav-logo::after{
+        content: 'MUMSA';
+        color: green;
+        /* font-family: 'Poppins', Times, serif; */
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        font-weight: bolder;
+        padding-left: 100px;
+    }
+
     .header .nav{
         position: fixed;
         flex-direction: column;
