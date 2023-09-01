@@ -274,12 +274,12 @@ footer #reach-us{
 
     #nav-logo::after{
         content: 'MUMSA';
-        color: green;
+        color: #fff;
         /* font-family: 'Poppins', Times, serif; */
         font-family: 'Times New Roman', Times, serif;
         font-size: 40px;
         font-weight: bolder;
-        padding-left: 100px;
+        padding-left: 20px;
     }
 
     .header .nav{
