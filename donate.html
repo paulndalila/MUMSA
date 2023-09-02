@@ -54,7 +54,7 @@
 
    <div class="body">
         <div class="methods">
-            <div class="method">
+            <!-- <div class="method">
                 <img src="images/mpesalogo.webp" >
                 <div class="mpesa">
                     <h1>Send Money</h1>
@@ -70,7 +70,69 @@
                     <p>Account Number - 01242028021900</p>
                     <p>National Bank Eldoret</p>
                 </div>
-            </div>
+            </div> -->
+            <div class="method">
+                <div class="paymentBtns">
+                    <button class="paymentBtn checked" id="pbMpesa">M-pesa</button>
+                    <button class="paymentBtn" id="pbBank">Bank</button>
+                </div>
+
+                <div class="panels">
+                    <form action="" method="post" id="mpesa-panel">
+                        <div class="mpesa-logo">
+                            <img src="images/mpesalogo.webp" alt="mlogo">
+                            <h4>Enter Amount & Number</h4>
+                        </div>
+    
+                        <div class="mpesa amount">
+                            <label for="amount">Amount</label>
+                            <input type="number" name="amount" id="amount" placeholder="Enter Amount" required/>
+                        </div>
+    
+                        <div class="mpesa phonenumber">
+                            <label for="pnumber">Phone Number</label>
+                            <input type="text" name="pnumber" id="mobile-number" placeholder="Enter Phone Number" required/>
+                        </div>
+                        <input type="submit" value="Donate" id="donateBtn">
+                    </form>
+
+                    <div id="Bank-panel" class="remove">
+                        <h3>Bank Donation</h3>
+                        <img src="images/nationalbank.webp">
+                        <div class="bank-details">
+                            <p><b>Account Name</b> - MUMSA</p>
+                            <p><b>Account Number</b> - 01242028021900</p>
+                            <p><b>National Bank Eldoret</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    const mpesaBtn = document.getElementById('pbMpesa');
+                    const bankBtn = document.getElementById('pbBank');
+
+                    const mpesa_panel = document.getElementById('mpesa-panel');
+                    const bank_panel = document.getElementById('Bank-panel');
+
+                    bankBtn.addEventListener("click", function() {
+                        bankBtn.classList.add("checked");
+                        mpesaBtn.classList.remove("checked");
+                        mpesa_panel.classList.add("remove");
+                        bank_panel.classList.remove("remove");
+                    });
+                    
+                    mpesaBtn.addEventListener("click", function() {
+                        mpesaBtn.classList.add("checked");
+                        bankBtn.classList.remove("checked");
+                        bank_panel.classList.add("remove");
+                        mpesa_panel.classList.remove("remove");
+                        
+                    });
+                </script>
+
+                <p class="note">~ Your donation is a beacon of hope. ~</p>
+            </div>            
+
         </div>
 
         <footer id="contacts">
