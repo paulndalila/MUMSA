@@ -271,16 +271,15 @@ footer #reach-us{
         border: none;
         top: 15px;
     }
-
+/* 
     #nav-logo::after{
         content: 'MUMSA';
         color: #fff;
-        /* font-family: 'Poppins', Times, serif; */
         font-family: 'Times New Roman', Times, serif;
         font-size: 35px;
         font-weight: bolder;
         padding-left: 20px;
-    }
+    } */
 
     .header .nav{
         position: fixed;
