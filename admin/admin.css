@@ -150,7 +150,7 @@ ul{
     margin-top: 10px;
 }
 
-.user-profile .profile{
+.user-profile .profile, .user-profile .news-add, .user-profile .event-add{
     position: relative;
     padding: 30px 120px;
     border-radius: 10px;
@@ -198,7 +198,7 @@ ul{
     background-color: dodgerblue;
 }
 
-#user-profile-exit{
+.user-profile-exit{
     position: absolute;
     top: 0;
     right: 20px;
@@ -212,7 +212,7 @@ ul{
     cursor: pointer;
 }
 
-#user-profile-exit:hover{
+.user-profile-exit:hover{
     background-color: rgb(175, 173, 173);
 }
 
@@ -750,4 +750,21 @@ ul{
     cursor: pointer;
     margin: 2px auto;
     background-color: rgb(42, 124, 110, 0.8);
+}
+
+@media only screen and (max-width: 800px){
+
+    .form-container .img-background{
+        display: none;
+    }
+
+    .form-part{
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .form-part h2{
+        font-size: 16px;
+        text-align: center;
+    }
 }

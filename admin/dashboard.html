@@ -42,7 +42,7 @@
                         <input type="text" name="search" placeholder="Search inventory">
                         <button type="submit" name="search" id="sbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
-                    <div class="user" onclick="openWindow()">
+                    <div class="user" onclick="openProfileWindow()">
                         <img src="../images/profile.avif">
                         <div class="details">
                             <h4>Paul Ndalila</h4>
@@ -151,7 +151,7 @@
                         <button type="submit" name="search" id="sbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
 
-                    <div class="user" onclick="openWindow()">
+                    <div class="user" onclick="openProfileWindow()">
                         <img src="../images/profile.avif">
                         <div class="details">
                             <h4>Paul Ndalila</h4>
@@ -204,7 +204,7 @@
                         <h3>MUMSA Social Media sites</h3>
                     </div>
 
-                    <div class="user" onclick="openWindow()">
+                    <div class="user" onclick="openProfileWindow()">
                         <img src="../images/profile.avif">
                         <div class="details">
                             <h4>Paul Ndalila</h4>
@@ -331,7 +331,7 @@
                         <h3>MUMSA RESOURCES</h3>
                     </div>
 
-                    <div class="user" onclick="openWindow()">
+                    <div class="user" onclick="openProfileWindow()">
                         <img src="../images/profile.avif">
                         <div class="details">
                             <h4>Paul Ndalila</h4>
@@ -395,7 +395,7 @@
                         <h3>MUMSA NEWS & EVENTS</h3>
                     </div>
 
-                    <div class="user" onclick="openWindow()">
+                    <div class="user" onclick="openProfileWindow()">
                         <img src="../images/profile.avif">
                         <div class="details">
                             <h4>Paul Ndalila</h4>
@@ -447,7 +447,7 @@
 
                         <div class="add-news">
                             <input type="submit" id="save-news" value="Save changes">
-                            <input type="submit" id="add-news" value="Add news">
+                            <input type="submit" id="add-news" onclick="openNewsWindow()" value="Add news">
                         </div>
                     </div>
 
@@ -488,8 +488,8 @@
                         </div>
 
                         <div class="add-events">
-                            <input type="submit" id="save-events" value="save changes">
-                            <input type="submit" id="add-event" value="add event">
+                            <input type="submit" id="save-events" value="Save changes">
+                            <input type="submit" id="add-event" onclick="openEventWindow()" value="Add event">
                         </div>
                     </div> 
 
@@ -532,7 +532,54 @@
                     <input type="submit" id="save-btn" value="Save changes">
                 </div>
 
-                <h1 id="user-profile-exit" onclick="closeWindow()">&times;</h1>
+                <h1 class="user-profile-exit" onclick="closeProfileWindow()">&times;</h1>
+            </form>
+        </div>
+
+        <div class="user-profile" id="news-add">
+            <form class="news-add">
+                <h1>Latest News</h1>
+                <div class="news-title">
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" placeholder="News title" required>
+                </div>
+                
+                <div class="news-para">
+                    <label for="paragraph">Paragraph:</label>
+                    <textarea name="paragraph" id="news-paragraph" cols="30" rows="10" placeholder="News paragraph" required></textarea>
+                </div>
+
+                <div class="news-image">
+                    <label for="nimage">News image:</label>
+                    <input type="file" accept="image/*" name="nimage" required>
+                </div>
+
+                <div class="savebtn">
+                    <input type="submit" id="save-btn" value="Add News">
+                </div>
+
+                <h1 class="user-profile-exit" onclick="closeNewsWindow()">&times;</h1>
+            </form>
+        </div>
+
+        <div class="user-profile" id="event-add">
+            <form class="event-add">
+                <h1>New Event</h1>
+                <div class="event-title">
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" placeholder="Event title" required>
+                </div>
+                
+                <div class="event-para">
+                    <label for="paragraph">Paragraph:</label>
+                    <textarea name="paragraph" id="event-paragraph" cols="30" rows="10" placeholder="Event paragraph" required></textarea>
+                </div>
+
+                <div class="savebtn">
+                    <input type="submit" id="save-btn" value="Add Event">
+                </div>
+
+                <h1 class="user-profile-exit" onclick="closeEventWindow()">&times;</h1>
             </form>
         </div>
     </div>
