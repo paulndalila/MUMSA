@@ -10,6 +10,7 @@ Moi University Muslim Students Association
   <li>Activities</li>
   <li>Donations</li>
   <li>Announcements</li>
+  <li>Staff login - for backend CRUD</li>
 </ul>
 <h2>About</h2>
 <p>This project is a website developed for the Muslim students' community at Moi University. It aims to address the unique needs and requirements of Muslim students by providing access to essential resources, information about events and a platform for discussions.</p>
