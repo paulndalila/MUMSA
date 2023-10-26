@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    background-color: rgb(247, 246, 246);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.header{
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+#body{
+    width: 100vw;
+}
+
+#methods{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+#skills-back{
+    width: 100%;
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#skills-back img{
+    width: 100%;
+    z-index: -9;
+}
+
+#skills-back #skills-back-cont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.712));
+}
+
+#skills-back-cont h1{
+    color: #fff;
+    padding-top: 150px;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.text-intro p{
+    text-align: center;
+    margin: 10px 50px;
+    color: black;
+}
+
+section h3{
+    color: black;
+}
+
+section p b{
+    margin-left: 20px;
+    color: black;
+}
+
+hr{
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.897);
+}
+
+/* CSS for Volunteer Form */
+section form {
+    width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+section input[type="text"],
+section input[type="email"],
+section textarea,
+section select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+section textarea {
+    height: 100px;
+}
+
+section input[type="submit"] {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+section input[type="submit"]:hover {
+    background: #0056b3;
+}
+  
+@media only screen and (max-width: 800px){
+
+    #skills-back-cont h1{
+        font-family: 'Playpen Sans', cursive;
+        font-size: 18px;
+    }
+
+    #skills-back img{
+        object-fit: cover;
+    }
+
+    .text-intro p{
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    #skills{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    #skills section{
+        padding: 10px 5px 10px 15px;
+    }
+
+    section form {
+        width: 99%;
+        padding: 20px 10px;
+        border-radius: none;
+    }
+
+    section h3{
+        font-size: 14px;
+    }
+
+    section p b{
+        margin-left: 10px;
+    }
+    
+    section p{
+        font-size: 14px;
+    }
+}

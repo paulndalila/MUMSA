@@ -73,12 +73,24 @@
             </div> -->
             <div class="method">
                 <div class="paymentBtns">
-                    <button class="paymentBtn checked" id="pbMpesa">M-pesa</button>
+                    <button class="paymentBtn checked" id="pbSend">PayBill</button>
+                    <button class="paymentBtn" id="pbMpesa">Toolkit</button>
                     <button class="paymentBtn" id="pbBank">Bank</button>
                 </div>
 
                 <div class="panels">
-                    <form action="" method="post" id="mpesa-panel">
+
+                    <div id="send-panel">
+                        <h3>MUMSA Mpesa PayBill</h3>
+                        <img src="images/lipa-na-mpes.jpg">
+                        <div class="paybill-details">
+                            <p><b>PayBill</b> - 625625</p>
+                            <p><b>Account Number</b> - 0280219</p>
+                            <p><b>Mpesa Paybill details</b></p>
+                        </div>
+                    </div>
+
+                    <form action="" method="post" id="mpesa-panel" class="remove">
                         <div class="mpesa-logo">
                             <img src="images/mpesalogo.webp" alt="mlogo">
                             <h4>Enter Amount & Number</h4>
@@ -110,15 +122,19 @@
                 <script>
                     const mpesaBtn = document.getElementById('pbMpesa');
                     const bankBtn = document.getElementById('pbBank');
+                    const paybillBtn = document.getElementById('pbSend');
 
                     const mpesa_panel = document.getElementById('mpesa-panel');
                     const bank_panel = document.getElementById('Bank-panel');
+                    const paybill_panel = document.getElementById('send-panel');
 
                     bankBtn.addEventListener("click", function() {
                         bankBtn.classList.add("checked");
+                        bank_panel.classList.remove("remove");
                         mpesaBtn.classList.remove("checked");
                         mpesa_panel.classList.add("remove");
-                        bank_panel.classList.remove("remove");
+                        paybillBtn.classList.remove("checked");
+                        paybill_panel.classList.add("remove");
                     });
                     
                     mpesaBtn.addEventListener("click", function() {
@@ -126,6 +142,18 @@
                         bankBtn.classList.remove("checked");
                         bank_panel.classList.add("remove");
                         mpesa_panel.classList.remove("remove");
+                        paybillBtn.classList.remove("checked");
+                        paybill_panel.classList.add("remove");
+                        
+                    });
+                    
+                    paybillBtn.addEventListener("click", function() {
+                        bankBtn.classList.remove("checked");
+                        bank_panel.classList.add("remove");
+                        mpesaBtn.classList.remove("checked");
+                        mpesa_panel.classList.add("remove");
+                        paybill_panel.classList.remove("remove");
+                        paybillBtn.classList.add("checked");
                         
                     });
                 </script>
